@@ -40,8 +40,13 @@ export function Footer() {
         }}>
           NAVIGATION
         </p>
-        {['SHOP', 'ARCHIVE', 'ABOUT'].map(item => (
-          <a key={item} href={`/${item.toLowerCase()}`} style={{
+        {[
+          { label: 'SHOP', href: '/shop' },
+          { label: 'ARCHIVE', href: '/archive' },
+          { label: 'ABOUT', href: '/about' },
+          { label: 'MENTIONS LÉGALES', href: '/mentions-legales' },
+        ].map(item => (
+          <a key={item.label} href={item.href} style={{
             fontFamily: 'Space Mono, monospace',
             fontSize: '11px',
             letterSpacing: '0.15em',
@@ -49,7 +54,7 @@ export function Footer() {
             textDecoration: 'none',
             transition: 'color 0.2s',
           }}>
-            {item}
+            {item.label}
           </a>
         ))}
       </div>
@@ -103,9 +108,9 @@ export function Footer() {
         <a href="/mentions-legales" style={{
           fontFamily: 'Space Mono, monospace',
           fontSize: '10px',
-          color: '#333',
+          color: '#888',
           letterSpacing: '0.1em',
-          textDecoration: 'none',
+          textDecoration: 'underline',
         }}>
           MENTIONS LÉGALES
         </a>
