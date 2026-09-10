@@ -49,13 +49,6 @@ export default function MentionsLegalesPage() {
             ],
           },
           {
-            title: 'PAIEMENT',
-            content: [
-              'Les paiements sont sécurisés et traités par Mollie B.V., prestataire de services de paiement agréé.',
-              'BIG CLUB ne stocke aucune donnée bancaire.',
-            ],
-          },
-          {
             title: 'CONTACT',
             content: ['lachainedua@gmail.com'],
           },
