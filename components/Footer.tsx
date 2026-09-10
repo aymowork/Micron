@@ -100,14 +100,15 @@ export function Footer() {
         }}>
           © {new Date().getFullYear()} MICRON. ALL RIGHTS RESERVED.
         </p>
-        <p style={{
+        <a href="/mentions-legales" style={{
           fontFamily: 'Space Mono, monospace',
           fontSize: '10px',
           color: '#333',
           letterSpacing: '0.1em',
+          textDecoration: 'none',
         }}>
-          CONTAMINATION MONDIALE
-        </p>
+          MENTIONS LÉGALES
+        </a>
       </div>
     </footer>
   )
